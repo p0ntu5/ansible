@@ -3,4 +3,6 @@
   gather_facts: false
   hosts: localhost
   tasks:
-  - copy: src="~/ansible/a.txt" dest="~/ansible/b.txt"
+  - copy: 
+    src: ~/ansible/a.txt
+    dest: ~/ansible/b.txt
