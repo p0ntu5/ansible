@@ -1,5 +1,6 @@
 ---
 - name: Ensure b.txt copied from a.txt
+  gather_facts: false
   hosts: localhost
   tasks:
   - copy: src="~/ansible/a.txt" dest="~/ansible/b.txt"
